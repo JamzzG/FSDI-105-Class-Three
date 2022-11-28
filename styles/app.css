@@ -1,27 +1,44 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background-color: black;
 }
 
-h1{
+.ok-alert {
+    border: 1px solid rgb(204, 201, 218);
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 0px;
+    border-radius: 25%;
+    background-color: darkslateblue;
+    box-shadow: -1px 1px 3px 0px rgb(211, 213, 211);
+    display: none;
+    position: absolute;
+}
+
+.ok-alert p {
+    margin: 0;
+    background-color: rgb(204, 201, 218);
+    color: darkslateblue;
+    font-weight: 800;
+}
+
+h1 {
     color: whitesmoke;
     text-shadow: darkslateblue 1px 1px 2px;
     background-color: rgb(79, 79, 79);
     padding: 1.7rem;
-    margin-bottom: -.2rem;
     font-size: 1.905rem;
     font-weight: 500;
-
 }
 
-h2{
-    margin-bottom: -.25rem;
+h2 {
+    margin-bottom: -0.25rem;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,21 +54,20 @@ h2{
     text-align: center;
     margin: 0px;
     justify-items: left;
+    margin-top: -0.5rem;
 }
 
-.data div{
+.data div {
     width: 25rem;
-    
 }
-        
 
-label{
+label {
     float: left;
     clear: left;
-    width:10rem;
+    width: 10rem;
     text-align: right;
     margin-left: -3.35rem;
-    padding-right: .5rem;
+    padding-right: 0.5rem;
     margin-top: 1rem;
 }
 
@@ -63,30 +79,29 @@ input {
     margin-top: 1rem;
 }
 
-select{
+select {
     float: left;
     width: 11rem;
     text-align: left;
-    padding-top: .20rem;
+    padding-top: 0.2rem;
     color: whitesmoke;
     background-color: #2b3232;
     margin-top: 1rem;
-
 }
 
-.sel-color{
+.sel-color {
     width: 11rem;
     margin-right: 2rem;
 }
 
-.btn-add{
+.btn-add {
     display: inline-block;
     margin-bottom: 1.5rem;
-    margin-top: .75rem;
+    margin-top: 0.75rem;
 }
 
 #btnSave {
-    background-image: -webkit-linear-gradient(top, gray, );
+    background-image: -webkit-linear-gradient(top, gray);
     background-image: -moz-linear-gradient(top, gray, navy);
     background-image: -ms-linear-gradient(top, gray, navy);
     background-image: -o-linear-gradient(top, navy, gray);
@@ -95,14 +110,13 @@ select{
     -moz-border-radius: 10;
     border-radius: 25%;
     text-shadow: 3px 1px 4px darkslateblue;
-    font-size:  1rem;
-    padding: .1rem, .1rem,  .1rem, .1rem;
+    font-size: 1rem;
+    padding: 0.1rem, 0.1rem, 0.1rem, 0.1rem;
     border: solid #ffffff 2px;
     width: 6rem;
     height: 1.5rem;
     color: #ffffff;
-
-    }
+}
 
 #btnSave:hover {
     background: #024670;
@@ -112,4 +126,10 @@ select{
     background-image: -o-linear-gradient(top, rgb(4, 4, 127), #2473a8);
     background-image: linear-gradient(to bottom, rgb(4, 4, 127), #2473a8);
     text-decoration: none;
-    }
+}
+
+#tblUser {
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+}
